@@ -3,10 +3,10 @@
 function setup(){
     createCanvas(400,400);
     background(255,255,0);
-    fill(150);
+    fill(255,0,255);
     ellipse(100,100,50,50);
     fill(0,255,207);
-    ellipse(150,100,75,75);
+    ellipse(350,4500,75,75);
     fill(0);
     textSize(20);
     text("Halló heimur",150,40);
