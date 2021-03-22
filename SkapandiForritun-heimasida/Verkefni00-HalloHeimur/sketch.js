@@ -6,7 +6,7 @@ function setup(){
     fill(255,0,255);
     ellipse(100,100,50,50);
     fill(0,255,207);
-    ellipse(250,300,75,75);
+    ellipse(250,200,75,75);
     fill(0);
     textSize(20);
     text("Halló heimur",150,40);
