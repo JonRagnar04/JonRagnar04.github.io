@@ -1,7 +1,7 @@
 // Hér kemur kóðinn þinn:
 
 function setup(){
-    createCanvas(400,400);
+    createCanvas(600,600);
     background(255,255,0);
     fill(255,0,255);
     ellipse(100,100,50,50);
