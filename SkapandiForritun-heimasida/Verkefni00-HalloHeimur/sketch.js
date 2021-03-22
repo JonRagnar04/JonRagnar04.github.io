@@ -16,5 +16,5 @@ function setup(){
     text("Halló heimur",150,40);
     fill(0)
     textSize(20);
-    text("Í dag er yndislegur dagur!",285,450)
+    text("Í dag er yndislegur dagur!",100,375)
 }
