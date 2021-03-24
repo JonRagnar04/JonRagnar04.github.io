@@ -4,12 +4,12 @@ Til þess að læra að gera eitthvað, prófaðu að leita á google af því s
 "how to change link color." */
 
 body {
-  background-color: #FF0000;
+  background-color: #00FF9D;
   color: #FFFFAA;
 }
 
 h1 {
-  color: #0FFF00;
+  color: #00FF00;
   background-color: #888888;
   font-family: Helvetica, sans-serif;
   font-style: bold;
