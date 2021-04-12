@@ -1,27 +1,41 @@
 // Hér kemur kóðinn þinn:
 
-function setup(){
-    createCanvas(225,225);
-    background(0,0,0);
-    noStroke();
-    fill(229,49,35);
-    rect(0,0,95,120);//Rauði Rétthyrningurinn
-    noStroke();
-    fill(236,237,232);
-    rect(100,0,125,120);//Hvíti Rétthyrningurinn uppi í hægra horninu
-    noStroke();
-    fill(233,235,230);
-    rect(0,125,95,101);//Hvíti Rétthyrningurinn niðri í vinstra horninu
-    noStroke();
-    fill(237,239,228);
-    rect(100,125,105,87);//Hvíti Rétthyrningurinn á milli bláa og gula
-    noStroke();
-    fill(252,201,43);
-    rect(100,217,59,12);//Guli Rétthyrningurinn
-    noStroke();
-    fill(0,67,141);
-    rect(210,125,15,37);//Blái Rétthyrningurinn
-    noStroke();
-    fill(232,234,229);
-    rect(210,167,15,63);
+var bukur = 150;
+var augabrúnir = 122;
+var augu = 20
+
+function setup() {
+  createCanvas(1275,574);
+  rectMode(CENTER);
+}
+function draw() {
+  background(255,200,0);
+  // Búkur
+  fill(255,217,182);
+  ellipse(mouseX, mouseY,bukur,bukur);
+  // Höfuð
+  fill(255,217,182);
+  ellipse(mouseX, mouseY - bukur/1.5, 80,80);
+  // Augu
+  fill(255);
+  ellipse (mouseX - 25, mouseY - bukur/1.4, 40,20);
+  ellipse (mouseX + 25, mouseY - bukur/1.4, 40,20);
+  fill(0);
+  ellipse (mouseX - augu, mouseY - bukur/1.45, 10,10);
+  ellipse (mouseX + augu, mouseY - bukur/1.45, 10,10);
+  // Fætur
+  line (mouseX - 20, mouseY + bukur/2 - 3, mouseX - 20, mouseY + bukur/2 + 50);
+  line (mouseX + 20, mouseY + bukur/2 - 3, mouseX + 20, mouseY + bukur/2 + 50);
+  line (mouseX + 20, mouseY + bukur/2 + 50, mouseX + 40, mouseY + bukur/2 + 50);
+  line (mouseX - 20, mouseY + bukur/2 + 50, mouseX - 40, mouseY + bukur/2 + 50);
+  // Hendur
+  line (mouseX + bukur/2 - 5, mouseY - 29, mouseX + bukur/2 + 30, mouseY - 35);
+  line (mouseX - bukur/2 + 5, mouseY - 29, mouseX - bukur/2 - 30, mouseY - 35);
+  // Augabrúnir
+  line (mouseX + 12, mouseY - augabrúnir, mouseX + 30, mouseY - 122);
+  line (mouseX - 12, mouseY - augabrúnir, mouseX - 30, mouseY - 122);
+}
+function mousePressed() {
+	augabrúnir = random (115,129);
+  augu = random (20,30);
 }
