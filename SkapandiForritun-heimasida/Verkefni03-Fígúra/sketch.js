@@ -2,7 +2,8 @@
 
 var bukur = 150;
 var augabrúnir = 122;
-var augu = 20
+var augu = 20;
+var munnur = 10;
 
 function setup() {
   createCanvas(1275,574);
@@ -13,6 +14,14 @@ function draw() {
   // Búkur
   fill(255,217,182);
   ellipse(mouseX, mouseY,bukur,bukur);
+  fill(255,121,245);
+  ellipse(mouseX + 40, mouseY - 30, 10,10);
+  fill(0);
+  ellipse(mouseX + 40, mouseY - 30, 2,2);
+  fill(255,121,245);
+  ellipse(mouseX - 40, mouseY - 30, 10,10);
+  fill(0);
+  ellipse(mouseX - 40, mouseY - 30, 2,2);
   // Höfuð
   fill(255,217,182);
   ellipse(mouseX, mouseY - bukur/1.5, 80,80);
@@ -34,8 +43,12 @@ function draw() {
   // Augabrúnir
   line (mouseX + 12, mouseY - augabrúnir, mouseX + 30, mouseY - 122);
   line (mouseX - 12, mouseY - augabrúnir, mouseX - 30, mouseY - 122);
+  // Munnur
+  fill(170,0,0);
+  ellipse(mouseX, mouseY - 85, 30, munnur);
 }
 function mousePressed() {
 	augabrúnir = random (115,129);
-  augu = random (20,30);
+  augu = random (16,37);
+  munnur = random (0, 40);
 }
